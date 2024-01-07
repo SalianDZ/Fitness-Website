@@ -5,7 +5,7 @@
 	<meta name="viewport"
 		content="width=device-width, 
 						initial-scale=1.0">
-	<title>GeeksforGeeks</title>
+	<title>Quantum Gym</title>
 	<link rel="stylesheet"
 		href="css/sliding-login-and-register.css">
 
@@ -33,39 +33,60 @@
 		<div class="form-section">
 
 			<!-- login form -->
-			<div class="login-box">
-				<input type="email"
-					class="email ele"
-                    name="email"
-                    id="email"
-					placeholder="youremail@email.com">
-				<input type="password"
-					class="password ele"
-                    name="password"
-                    id="password"
-					placeholder="password">
-				<button class="clkbtn">Login</button>
-			</div>
+			<form id="loginForm" method="post">
+				<div class="login-box">
+					<input type="email"
+						class="email ele"
+						name="email"
+						id="email"
+						placeholder="youremail@email.com">
+					<input type="password"
+						class="password ele"
+						name="password"
+						id="password"
+						placeholder="password">
+					<button class="clkbtn" type="button" onclick="validateLoginForm()">Login</button>
+				</div>
+			</form>
 
 			<!-- signup form -->
-			<div class="signup-box">
-				<input type="text"
-					class="name ele"
-					placeholder="Enter your name">
-				<input type="email"
-					class="email ele"
-					placeholder="youremail@email.com">
-				<input type="password"
-					class="password ele"
-					placeholder="password">
-				<input type="password"
-					class="password ele"
-					placeholder="Confirm password">
-				<button class="clkbtn">Signup</button>
-			</div>
+			<form>
+				<div class="signup-box">
+					<input type="text"
+						class="name ele"
+						id="register-name"
+						placeholder="Enter your name">
+					<input type="email"
+						class="email ele"
+						id="register-email"
+						placeholder="youremail@email.com">
+					<input type="password"
+						class="password ele"
+						id="register-password"
+						placeholder="password">
+					<input type="password"
+						id="register-confirm-password"
+						class="password ele"
+						placeholder="Confirm password">
+					<button class="clkbtn" type="button" onclick="validateRegister()">Signup</button>
+				</div>
+			</form>
 		</div>
 	</div>
 	<script src="js/register-login-form.js"></script>
+
     <script src="js/login-validation.js"></script>
+	<script>
+		function validateLoginForm() {
+		  validateForm();
+		}
+	</script>
+
+	<script src="js/register-validation.js"></script>
+	<script>
+		function validateRegister() {
+			validateRegisterForm();
+		}
+	</script>
 </body>
 </html>

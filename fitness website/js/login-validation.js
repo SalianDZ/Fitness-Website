@@ -1,26 +1,19 @@
 function validateForm() {
-    // Get form inputs
-    var username = document.getElementById('email').value;
+    var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
 
-    // Reset error messages
-    document.getElementById('emailError').innerHTML = '';
-    document.getElementById('passwordError').innerHTML = '';
-
-    // Validate username
-    if (username.trim() === '') {
-        document.getElementById('emailError').innerHTML = 'Email is required';
-        return false;
+    if (email.trim() === '') {
+      alert('Please enter your email.');
+      return;
     }
 
-    // Validate password
     if (password.trim() === '') {
-        document.getElementById('passwordError').innerHTML = 'Password is required';
-        return false;
+      alert('Please enter your password.');
+      return;
     }
 
-    // Additional validation logic can be added here
-
-    // If all validations pass, the form will be submitted
-    return true;
-}
+    
+    alert('Form is valid. You can submit it now!');
+    // Uncomment the line below to submit the form
+    // document.getElementById('loginForm').submit();
+  }
