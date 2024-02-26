@@ -26,6 +26,6 @@ function validateRegisterForm() {
 
     // If all validations pass, you can submit the form or perform further actions.
     alert('Form is valid. You can submit it now!');
-    // Uncomment the line below to submit the form
+
     // document.getElementById('signupForm').submit();
   }

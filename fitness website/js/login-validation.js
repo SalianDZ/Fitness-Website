@@ -14,6 +14,6 @@ function validateForm() {
 
     
     alert('Form is valid. You can submit it now!');
-    // Uncomment the line below to submit the form
+    
     // document.getElementById('loginForm').submit();
   }

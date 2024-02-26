@@ -458,7 +458,6 @@
     }
 
     @media (max-width: 768px) {
-
       .header .menu {
         position: absolute;
         top: 99%;
@@ -521,6 +520,8 @@
       }
 
       @media only screen and (max-width: 715px) {
+
+
        .sectiondiv{
           width: 100%;
         }
@@ -565,7 +566,12 @@
 
           #check:checked~ul {
             left: 0;
-          } 
+          }
+
+          .footer
+          {
+            display: flex;
+          }
         }
       }
     }
